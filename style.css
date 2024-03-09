@@ -20,6 +20,8 @@ header {
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.png);
     background-size: cover;
     background-repeat: repeat;
+    position: sticky;
+    top: 0px;
 }
 
 .header{
@@ -29,6 +31,8 @@ header {
     /* background-color: #222; */
     width: 100vw;
     border-radius: 5px;
+    position: sticky;
+    top: 0px;
 }
 
 .elements {
@@ -227,12 +231,19 @@ body
   width: 70vw;
   background-color: #000;
   margin-left: 15vw;
-  margin-top:10vh;
+  /* margin-top:10vh; */
+  /* padding-top: 10vh; */
   border-radius: 20px;
   display: flex;
   flex-direction: row-reverse;
-}
+  box-shadow: 0;
+  transition: box-shadow 1s; 
 
+}
+.intro:hover{
+  box-shadow: 5px 5px 5px #515151;
+
+}
 .para{
   color: white ;
 justify-self: center;
@@ -357,10 +368,157 @@ justify-self: center;
    margin-top: 10vh; 
 }
 
+main{ 
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.png);
+    background-size: cover;
+} 
+/* main{
+  background-color: antiquewhite;
+} */
+
+
+.pos{
+  margin-top: 10vh;
+  padding-bottom: 10vh;
+  /* display: flex; */
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  /* padding: 10vh; */
+}
+
+.calculator h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calculator div {
+  margin-bottom: 15px;
+}
+
+.calculator label {
+  display: inline-block;
+  width: 120px;
+  color: #666;
+}
+
+.calculator input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.calculator input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.calculator button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.calculator button:hover {
+  background-color: #0056b3;
+}
+
+.calculator p {
+  margin-top: 15px;
+  color: #666;
+}
+
+.calci{
+  font-weight: 900;
+  background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+  margin-left: 33.5vw;
+  margin-bottom: 3vw;
+  /* font-style: it; */
+  text-decoration: underline;
+  /* background-color: #f9f9f9; */
+}
+
+
+footer {
+  /* margin-top: 10vh; */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 17px;
+  box-shadow: 0 0 10px rgba(8, 106, 31, 0.1);
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.foot {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.foot:hover {
+  background-color: #0056b3;
+}
+
+
 /* main{
   background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img.png);
     background-size: cover;
-} */
-/* main{
+} /
+/ main{
   background-color: antiquewhite;
+} */
+/* h1 {
+  color: #333;
+  margin-bottom: 20px;
 } */
