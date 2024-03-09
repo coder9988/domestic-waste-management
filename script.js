@@ -31,3 +31,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+function calculateWaste() {
+    var recyclables = parseFloat(document.getElementById('recyclables').value) || 0;
+    var compostables = parseFloat(document.getElementById('compostables').value) || 0;
+    var landfill = parseFloat(document.getElementById('landfill').value) || 0;
+  
+    var totalWaste = recyclables + compostables + landfill;
+    
+    document.getElementById('totalWaste').textContent = totalWaste.toFixed(2);
+  }
+  document.querySelectorAll('.calculator input').forEach(input => {
+    input.addEventListener('keypress', function(event) {
+      if (event.keyCode === 13) {
+        event.preventDefault();
+        const nextInput = this.parentElement.nextElementSibling.querySelector('input');
+        if (nextInput) {
+          nextInput.focus();
+        }
+      }
+    });
+  });
